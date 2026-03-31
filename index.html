@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/webp/luma.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/index.js" defer></script>
+    <title>Desarrollo Web -  FrontEnd - PFO1-2026</title>
+</head>
+<body>
+    <nav class="navbar">
+       <div class="logo">PORTFOLIO PERSONAL</div>
+        <ul class="nav-links">
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul> 
+    </nav>
+    <header>
+        <h1 class="neon-text">Hola, soy <span>LUMA</span></h1>
+        <p>Desarrollador Creativo & Entusiasta de la Tecnología</p>
+    </header>
+    <main>
+        <section id="sobre-mi" class="section hidden-left">
+            <h2>SOBRE MÍ</h2>
+                <p id="intro" title="Introducción">¡Hola! soy Luciana. Me dicen LUMA, una emprendedora y creadora digital con un amor profundo por el diseño web y el marketing digital. Mi jornada profesional es un emocionante viaje de descubrimiento. Cada proyecto es una oportunidad para explorar nuevas ideas y tecnologías.</p>
+
+                <p id="mision" title="Misión">Mi misión es ser una aliada para emprendedores y empresas, ayudándoles a dar VIDA a sus ideas, proyectos y negocios en un mundo que cambia y evoluciona de forma constante.</p>
+                    
+                <p id="hobbies" title="Hobbies">Cuando no estoy inmersa en el mundo digital, me encuentro entre plantas y animales, mi gran pasión. Desde cultivar mi propia huerta orgánica hasta crear artesanías con materiales naturales como arcilla y madera, cada momento dedicado a la jardinería y a la artesanía es un acto de conexión con la naturaleza.  Creo firmemente en la posibilidad de triunfar de manera sostenible y respetuosa con el medio ambiente.</p>
+                    
+                <p id="skills" title="Skills">Mis habilidades organizativas son un pilar en mi trabajo, contribuyendo al éxito del equipo y asegurando que cada proyecto se desarrolle de manera fluida y efectiva.</p>
+                    
+                <p id="invitacion" title="Invitación">Ansío poder compartir mi experiencia y pasión contigo. ¡Espero poder ayudarte a alcanzar tus objetivos y dar visibilidad a tus proyectos!</p>            
+        </section>   
+        
+    <section id="proyectos" class="section">
+        <h2>MIS PROYECTOS</h2>
+        <div id="portfolio-container" class="grid-container"></div>
+    </section> 
+    
+    <section id="contacto" class="section hidden-right">
+        <h2>CONTACTO</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Email" required>
+            <textarea placeholder="Tu Mensaje" rows="5"></textarea>
+            <button type="submit" class="btn-neon">Enviar Mensaje</button>
+        </form>
+    </section>    
+    </main>
+    <footer></footer>
+</body>

@@ -1,4 +1,10 @@
 # Desarrollo de Sistemas Web (Front End) - 2° D
+## Descripción
+Practica formativa obligatoria para la materia Desarrollo de Sistemas Web (Front End) de la carrera Tecnicatura Superior en Desarrollo de Softwares.
+
+## Objetivo
+
+Diseñar un sitio web con html, css y javascript puro, presentándonos. 
 
 ## Checklist - Práctica Formativa Obligatoria 1
 
@@ -10,8 +16,8 @@
     [ x ] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
 • Repositorio y Publicación:
 
-    [ ] Repositorio en GitHub creado.
-    [ ] Proyecto subido al repositorio.
+    [ x ] Repositorio en GitHub creado.
+    [ x ] Proyecto subido al repositorio.
     [ ] Proyecto publicado utilizando GitHub Pages.
     [ ] En el "README.md" se indica la URL de GitHub Pages.
 • Uso de Google Fonts:

@@ -1,0 +1,217 @@
+/* 1. Variables y Configuración Base */
+:root {
+    --bg-color: #0d0d0d;        /* Negro casi total */
+    --neon-blue: #00f3ff;       /* Cian Neón */
+    --neon-pink: #ff00ff;       /* Magenta Neón */
+    --text-color: #ffffff;
+    --transition-speed: 0.8s;    /* Velocidad de las animaciones */
+}
+
+/* --- ESTILOS DEL NAV --- */
+.navbar {
+    position: fixed;       /* Se queda arriba mientras haces scroll */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(13, 13, 13, 0.9); /* Fondo semi-transparente */
+    padding: 20px 0;
+    border-bottom: 2px solid var(--neon-blue);
+    box-shadow: 0 5px 15px rgba(0, 243, 255, 0.2);
+    z-index: 1000;         /* Asegura que siempre esté por encima de todo */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue);
+}
+
+/* --- ESTILOS DEL HEADER (HERO) --- */
+.hero {
+    height: 100vh;         /* Ocupa toda la pantalla al entrar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #1a1a1a 0%, #0d0d0d 100%);
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #888;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+/* Botón Neón General */
+.btn-neon {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: transparent;
+    color: var(--neon-blue);
+    border: 2px solid var(--neon-blue);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn-neon:hover {
+    background: var(--neon-blue);
+    color: #000;
+    box-shadow: 0 0 20px var(--neon-blue);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Evita que las animaciones causen scroll horizontal */
+    line-height: 1.6;
+}
+
+/* 2. Estilo Neón para Títulos */
+.neon-text {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 10px var(--neon-blue),
+                 0 0 20px var(--neon-blue),
+                 0 0 40px var(--neon-blue);
+    margin-top: 100px;
+}
+
+.neon-text span {
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink),
+                 0 0 20px var(--neon-pink);
+}
+
+/* 3. Estructura de Secciones */
+.section {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 50vh;
+}
+
+/* 4. CLASES PARA ANIMACIÓN (La clave del "Translate") */
+/* Estado inicial: movidos a los lados y transparentes */
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100px); /* Movido 100px a la izquierda */
+    transition: all var(--transition-speed) ease-out;
+}
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100px); /* Movido 100px a la derecha */
+    transition: all var(--transition-speed) ease-out;
+}
+
+/* Estado final: cuando JS les agregue esta clase, se moverán a su sitio original */
+.show {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+/* 5. Grid de Proyectos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Estilo de la Card (Tarjeta de proyecto) */
+.card {
+    background: #1a1a1a;
+    border: 1px solid var(--neon-blue);
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px var(--neon-blue);
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* --- ESTILOS DEL FORMULARIO DE CONTACTO --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(26, 26, 26, 0.8); /* Fondo oscuro suave */
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* Estilo para los campos de entrada (Input y Textarea) */
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background: #0d0d0d;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    outline: none; /* Quitamos el borde azul por defecto de los navegadores */
+    transition: 0.3s ease;
+}
+
+/* EFECTO NEÓN AL HACER CLIC (FOCUS) */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: var(--neon-pink);
+    box-shadow: 0 0 10px var(--neon-pink),
+                0 0 5px var(--neon-pink) inset;
+}
+
+/* Estilo del botón de envío */
+.contact-form .btn-neon {
+    align-self: center; /* Centra solo el botón */
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Placeholder (texto de ayuda dentro de los campos) */
+::placeholder {
+    color: #555;
+}
