@@ -131,7 +131,7 @@ body {
 
 /* 3. Estructura de Secciones */
 .section {
-    padding: 50px 20px;
+    padding: 80px 20px;
     max-width: 1000px;
     margin: 0 auto;
     min-height: 50vh;
