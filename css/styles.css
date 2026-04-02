@@ -92,6 +92,24 @@ body {
     margin: 0;
     overflow-x: hidden; /* Evita que las animaciones causen scroll horizontal */
     line-height: 1.6;
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        gap:10px;
+        img{
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--neon-pink);
+            box-shadow: 0 0 15px var(--neon-pink);
+            
+        }
+        p{
+            text-align: center;
+            font-weight: bold;
+        }
+    }
 }
 
 /* 2. Estilo Neón para Títulos */
@@ -113,7 +131,7 @@ body {
 
 /* 3. Estructura de Secciones */
 .section {
-    padding: 100px 20px;
+    padding: 50px 20px;
     max-width: 1000px;
     margin: 0 auto;
     min-height: 50vh;

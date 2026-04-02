@@ -1,14 +1,30 @@
 [
     {
-        "titulo": "Proyecto Web 1",
-        "descripcion": "Una aplicación increíble con efectos neón.",
-        "imagen": "https://via.placeholder.com/300x200",
-        "link": "#"
+        "titulo": "Plataforma de E-commerce",
+        "descripcion": "Simulación No-country: Optimización de plataforma de e-commerce, objetivo aumentar las conversiones.",
+        "imagen":"./img/portfolio/webp/totalInc.webp",
+        "link": "https://s02-26-equipo18-webbapp-1.onrender.com/"
     },
-    {
-        "titulo": "E-commerce App",
-        "descripcion": "Tienda online moderna y rápida.",
-        "imagen": "https://via.placeholder.com/300x200",
-        "link": "#"
+    {    
+        "titulo": "Estudio Martín Jordanes",
+        "descripcion":"Sitio Web Real en producción. Diseño en React y css modular. Responsive con Home y 4 secciones.",
+        "imagen":"./img/portfolio/webp/estudioJordanes.webp",
+        "sitio": "https://estudio-jordanes.vercel.app/"
+    },
+    {           
+        "titulo": "Juego de Adivinanza",
+        "descripcion":"Juega junto con la Vidente Amira: Intenta adivinar en qué número está pensando. A DIVERTIRSE!!!!!! ",
+        "imagen":"./img/portfolio/webp/adivinanza.webp",
+        "link": "https://luma2001.github.io/juegoadivinanza/"   
+    },
+    {    
+        "titulo": "Tablero de Notas",
+        "descripcion":"Pizarra para notas rápida. Interfaz agradable y sencilla. Posee ToDo List, Check List e Historial.",
+        "imagen":"./img/portfolio/webp/pizzara.webp",
+        "link": "https://pizarranotas.netlify.app/"    
     }
+    
 ]
+
+
+
