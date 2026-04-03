@@ -1,10 +1,16 @@
 # Desarrollo de Sistemas Web (Front End) - 2° D
 ## Descripción
+
 Practica formativa obligatoria para la materia Desarrollo de Sistemas Web (Front End) de la carrera Tecnicatura Superior en Desarrollo de Softwares.
 
 ## Objetivo
 
 Diseñar un sitio web con html, css y javascript puro, presentándonos. 
+
+## Enlaces
+
+- https://presentacion-pi-sand.vercel.app/
+- https://luma2001.github.io/presentacion/
 
 ## Checklist - Práctica Formativa Obligatoria 1
 
@@ -18,10 +24,10 @@ Diseñar un sitio web con html, css y javascript puro, presentándonos.
 
     [ x ] Repositorio en GitHub creado.
     [ x ] Proyecto subido al repositorio.
-    [ ] Proyecto publicado utilizando GitHub Pages.
-    [ ] En el "README.md" se indica la URL de GitHub Pages.
+    [ x ] Proyecto publicado utilizando GitHub Pages.
+    [ x ] En el "README.md" se indica la URL de GitHub Pages.
 • Uso de Google Fonts:
 
     [ x ] Enlace a Google Fonts incluido en la sección "head" del HTML.
-    [ ] La tipografía importada se aplica en el sitio.
-    [ ] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente?
+    [ x ] La tipografía importada se aplica en el sitio.
+    [ x ] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente? Es elegante y moderna.
